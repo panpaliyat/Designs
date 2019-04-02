@@ -27,7 +27,7 @@ The musical system uses Publisher-Subscriber (Observable-Observer) design model.
 
 <br>
 
-<u> ### Data-Driven flow </u>
+## Data-Driven flow
 
 Producer generates notes and writes them onto the pipe one at a time. The next filters then take those notes as input and generate output 
 note as shown in the below sequence diagram. Consumer finally consumes the received notes.
@@ -36,7 +36,7 @@ note as shown in the below sequence diagram. Consumer finally consumes the recei
 
 [data_driven]: /images/data_driven.png "Data Drive Flow"
 
-<u> ### Demand-Driven flow </u>
+## Demand-Driven flow
 
 Consumer indefinitely requests for the musical notes and drives a demand-driven flow. Filters continuously monitor the input pipe to 
 process the notes. The producer produces musical notes on receiving the request.

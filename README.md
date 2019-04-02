@@ -11,23 +11,23 @@ There are four kinds of filters: Transformers, Testers, Producers, and Consumers
 4. Consumer: Plays the note
 
 Every filter except producer and consumers reads a note from the shared input pipe and writes a note to the shared output pipe.
-
+<br>
 
 ![alt text][pipeline_architecture]
 
 [pipeline_architecture]: /images/pipeline_architecture.png "Pipeline architecture"
 
-
+<br>
 The musical system uses Publisher-Subscriber (Observable-Observer) design model. Filter is an observer of an observable Pipe.
-
+<br>
 
 ![alt text][publisher_subscriber]
 
 [publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram"
 
+<br>
 
-
-### <u> Data-driven flow </u>
+<u> ### Data-Driven flow </u>
 
 Producer generates notes and writes them onto the pipe one at a time. The next filters then take those notes as input and generate output 
 note as shown in the below sequence diagram. Consumer finally consumes the received notes.
@@ -36,7 +36,7 @@ note as shown in the below sequence diagram. Consumer finally consumes the recei
 
 [data_driven]: /images/data_driven.png "Data Drive Flow"
 
-### <u> Demand Driven flow </u>
+<u> ### Demand-Driven flow </u>
 
 Consumer indefinitely requests for the musical notes and drives a demand-driven flow. Filters continuously monitor the input pipe to 
 process the notes. The producer produces musical notes on receiving the request.

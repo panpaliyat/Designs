@@ -20,7 +20,7 @@ The musical system used Publisher-Subscriber (Observable-Observer) design model
 
 ![alt text][publisher_subscriber]
 
-[publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram"
+[publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram" =882x500
 
 ### Data-driven flow
 

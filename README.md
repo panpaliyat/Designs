@@ -16,9 +16,9 @@ Every filter except producer and consumers reads a note from the shared input pi
 
 [pipeline_architecture]: /images/pipeline_architecture.png "Pipeline architecture"
 
-The musical system used Publisher-Subscriber (Observable-Observer) design model
+![alt text][publisher_subscriber]
 
-<img src="/images/publisher_subscriber.png" alt="Publisher-Subscriber class diagram" width="882" height="500">
+[publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram" =882x500
 
 ### Data-driven flow
 

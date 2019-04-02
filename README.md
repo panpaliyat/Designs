@@ -14,18 +14,28 @@ Every filter except producer and consumers reads a note from the shared input pi
 
 ![alt text][pipeline_architecture]
 
-[pipeline_architecture]: /images/pipeline_architecture.png
+[pipeline_architecture]: /images/pipeline_architecture.png "Pipeline architecture"
 
 The musical system used Publisher-Subscriber (Observable-Observer) design model
 
+![alt text][publisher_subscriber]
 
-## Data-driven flow
+[publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram"
+
+### Data-driven flow
 
 Producer generates notes and writes them onto the pipe one at a time. The next filters then take those notes as input and generate output 
 note as shown in the below sequence diagram. Consumer finally consumes the received notes.
 
+![alt text][data_driven]
 
-## Demand Driven flow
+[data_driven]: /images/data_driven.png "Data Drive Flow"
+
+### Demand Driven flow
 
 Consumer indefinitely requests for the musical notes and drives a demand-driven flow. Filters continuously monitor the input pipe to 
 process the notes. The producer produces musical notes on receiving the request.
+
+![alt text][demand_driven]
+
+[demand_driven]: /images/demand_driven.png "Demand Driven Flow"

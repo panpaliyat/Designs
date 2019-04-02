@@ -18,9 +18,7 @@ Every filter except producer and consumers reads a note from the shared input pi
 
 The musical system used Publisher-Subscriber (Observable-Observer) design model
 
-![alt text][publisher_subscriber]
-
-[publisher_subscriber]: /images/publisher_subscriber.png "Publisher-Subscriber class diagram" =882x500
+<img src="/images/publisher_subscriber.png" alt="Publisher-Subscriber class diagram" width="882" height="500">
 
 ### Data-driven flow
 

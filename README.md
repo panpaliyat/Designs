@@ -12,9 +12,9 @@ There are four kinds of filters: Transformers, Testers, Producers, and Consumers
 
 Every filter except producer and consumers reads a note from the shared input pipe and writes a note to the shared output pipe.
 
-![alt text][pipline_architecture]
+![alt text][pipeline_architecture]
 
-[pipline_architecture]: /images/pipline_architecture.png
+[pipeline_architecture]: /images/pipeline_architecture.png
 
 The musical system used Publisher-Subscriber (Observable-Observer) design model
 
